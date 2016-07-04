@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Routename:</strong>
+  <%= @texi_route.routename %>
+</p>
+
+<p>
+  <strong>Origin:</strong>
+  <%= @texi_route.origin %>
+</p>
+
+<p>
+  <strong>Destination:</strong>
+  <%= @texi_route.destination %>
+</p>
+
+<p>
+  <strong>Distance:</strong>
+  <%= @texi_route.distance %>
+</p>
+
+<p>
+  <strong>Basiccharge:</strong>
+  <%= @texi_route.basicCharge %>
+</p>
+
+<%= link_to 'Edit', edit_texi_route_path(@texi_route) %> |
+<%= link_to 'Back', texi_routes_path %>

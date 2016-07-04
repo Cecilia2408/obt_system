@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  routename: MyString
+  origin: MyString
+  destination: MyString
+  distance: 1.5
+  basicCharge: 1.5
+
+two:
+  routename: MyString
+  origin: MyString
+  destination: MyString
+  distance: 1.5
+  basicCharge: 1.5

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  routename: MyString
+  origin: MyString
+  destination: MyString
+  price: 1.5
+
+two:
+  routename: MyString
+  origin: MyString
+  destination: MyString
+  price: 1.5

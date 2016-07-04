@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :bus_routes
+  resources :rails_routes
+  resources :texi_routes
   devise_for :users
   root 'welcome#index'
 

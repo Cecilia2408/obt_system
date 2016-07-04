@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  routename: MyString
+  BusOrigin: MyString
+  BusDestination: MyString
+  price: 1.5
+
+two:
+  routename: MyString
+  BusOrigin: MyString
+  BusDestination: MyString
+  price: 1.5

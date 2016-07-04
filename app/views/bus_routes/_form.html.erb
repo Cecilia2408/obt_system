@@ -1,0 +1,33 @@
+<%= form_for(@bus_route) do |f| %>
+  <% if @bus_route.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@bus_route.errors.count, "error") %> prohibited this bus_route from being saved:</h2>
+
+      <ul>
+      <% @bus_route.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :routename %><br>
+    <%= f.text_field :routename %>
+  </div>
+  <div class="field">
+    <%= f.label :BusOrigin %><br>
+    <%= f.text_field :BusOrigin %>
+  </div>
+  <div class="field">
+    <%= f.label :BusDestination %><br>
+    <%= f.text_field :BusDestination %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br>
+    <%= f.text_field :price %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

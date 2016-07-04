@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Rails Routes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Routename</th>
+      <th>Origin</th>
+      <th>Destination</th>
+      <th>Price</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @rails_routes.each do |rails_route| %>
+      <tr>
+        <td><%= rails_route.routename %></td>
+        <td><%= rails_route.origin %></td>
+        <td><%= rails_route.destination %></td>
+        <td><%= rails_route.price %></td>
+        <td><%= link_to 'Show', rails_route %></td>
+        <td><%= link_to 'Edit', edit_rails_route_path(rails_route) %></td>
+        <td><%= link_to 'Destroy', rails_route, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Rails route', new_rails_route_path %>

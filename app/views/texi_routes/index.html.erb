@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Texi Routes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Routename</th>
+      <th>Origin</th>
+      <th>Destination</th>
+      <th>Distance</th>
+      <th>Basiccharge</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @texi_routes.each do |texi_route| %>
+      <tr>
+        <td><%= texi_route.routename %></td>
+        <td><%= texi_route.origin %></td>
+        <td><%= texi_route.destination %></td>
+        <td><%= texi_route.distance %></td>
+        <td><%= texi_route.basicCharge %></td>
+        <td><%= link_to 'Show', texi_route %></td>
+        <td><%= link_to 'Edit', edit_texi_route_path(texi_route) %></td>
+        <td><%= link_to 'Destroy', texi_route, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Texi route', new_texi_route_path %>

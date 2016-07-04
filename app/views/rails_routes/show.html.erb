@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Routename:</strong>
+  <%= @rails_route.routename %>
+</p>
+
+<p>
+  <strong>Origin:</strong>
+  <%= @rails_route.origin %>
+</p>
+
+<p>
+  <strong>Destination:</strong>
+  <%= @rails_route.destination %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @rails_route.price %>
+</p>
+
+<%= link_to 'Edit', edit_rails_route_path(@rails_route) %> |
+<%= link_to 'Back', rails_routes_path %>
