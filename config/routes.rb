@@ -1,9 +1,15 @@
 Rails.application.routes.draw do
+  
+
+
   resources :bus_routes
   resources :rails_routes
   resources :texi_routes
   devise_for :users
-  root 'welcome#index'
+  root 'welcome#mainpage'
+
+  
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
